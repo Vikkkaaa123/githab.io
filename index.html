@@ -1,37 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru">
-
-  <head>
-    <title>Задание 2</title>
-  </head>
-
-   <body style="margin:0;">
-    <div style="width:100%; background-color:blue; padding: 15px; height:100px;">
-      <img style="float:left; margin:10px; width:200px; height:115px;" src="https://avatars.mds.yandex.net/i?id=be5b072d90534c2f308d55a6c1f5b70730ef5a3c-9198173-images-thumbs&n=13" alt="Интернет" >
-      <div style="background-color:grey; padding:10px;">Задание по WEB-разработке </div>
-    </div>
-
-    <div style="max-width:800px; background-color:green; margin: 0 auto; margin-top:20px; padding:10px;">
-    На этом сайте расположены различные гиперссылки, форма и таблица, также есть футер.
-    </div>
-
-     <h2>Меню</h2>
-     <div style="width:100px; background-color:#ccc; margin:20px; padding:20px;">
-      <span style="background-color:#ccc;">  
-<a href="index.html#ss">Ссылки</a>
-<a href="index.html#ff">Форма</a>
-<a href="index.html#tt">Таблица</a>
-
-   </span>
-    </div>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Задание 2</title>
+  <link rel="stylesheet" href="./files/style.css">
+</head>
+<body>
+<header>
+  <img class="picture-logo" src="https://avatars.mds.yandex.net/i?id=be5b072d90534c2f308d55a6c1f5b70730ef5a3c-9198173-images-thumbs&n=13" alt="логотип">
+  <nav>
+    <a href="index1.html#hyperlinks">Ссылки</a>
+    <a href="index1.html#table">Таблица</a>
+    <a href="index1.html#forma">Форма</a>
+  </nav>
+  <div class="title">Задание по WEB-разработке</div>
+</header>
 
 
-
-<div id="ss"> </div>
 <h1>Ссылки</h1>
-
-<ul>
-<li><a href="http://www.kubsu.ru/" title="Официальный сайт
+<div id="hyperlinks" class="content">
+ <li><a href="http://www.kubsu.ru/" title="Официальный сайт
 Кубанского государственного университета">КубГУ (абсолютная ссылка на главную страницу)</a></li>
 
 <li><a href="https://www.kubsu.ru/" title="Официальный сайт
@@ -91,55 +80,15 @@
 
 
 <div id="Fragment">
-        <h2>Фрагмент страницы</h2>
+        <h3>Фрагмент страницы</h3>
         <p>Здесь находится фрагмент страницы, на который ссылается одна из гиперссылок.</p>
     </div>
 
 
 
-<!-- Форма с полями -->
-<div id="ff"> </div>
-     <form action="test@example.com">
-        <label>ФИО: <input type="text"><br></label>
-        <label>Телефон: <input type="tel"><br></label>
-        <label>E-mail: <input type="email"><br></label>
-        <label>Дата рождения: <input type="date"><br></label>
-
-        <label>Пол:</label>
-        <label><input type="radio" name="gender">М</label>
-        <label><input type="radio" name="gender">Ж<br></label>
-
-        <label>
-            Любимый язык программирования: 
-            <select name="prog-lang" id="prog-lang">
-                <option value="">JavaScript</option>
-                <option value="">PHP</option>
-                <option value="">Python</option>
-                <option value="">Java</option>
-                <option value="">Pascal</option>
-                <option value="">С</option>
-                <option value="">С++</option>
-                <option value="">Haskel</option>
-                <option value="">Clojure</option>
-                <option value="">Prolog</option>
-                <option value="">Scala</option>
-            </select><br>
-        </label>
-
-        <label>
-            Биография:<br>
-            <textarea name="bio" id="bio"></textarea><br>
-        </label>
-        
-        <label><input type="checkbox">С контрактом ознакомлен(-а)</label><br>
-        <input type="submit" value="Сохранить">
-    </form>
-
-
-<div id="tt"> </div>
 <h2>Таблица ( основные наиболее часто используемыe элементы HTML)</h2>
-<table>
-      <tr>
+<table id="table" class="content">
+  <tbody><tr>
         <th>Элемент</th>
         <th>Тег</th>
       </tr>
@@ -191,31 +140,55 @@
         <th>Таблица</th>
         <th>table</th>
       </tr>      
-
-    </table>
-
+</tbody></table>
 
 
-<footer>(c) Виктория Переузник 2024</footer>
+<h2>Форма</h2>
+<div id="forma" class="content">
+ <form action="test@example.com">
+        <label>ФИО: <input type="text"><br></label>
+        <label>Телефон: <input type="tel"><br></label>
+        <label>E-mail: <input type="email"><br></label>
+        <label>Дата рождения: <input type="date"><br></label>
+
+        <label>Пол:</label>
+        <label><input type="radio" name="gender">М</label>
+        <label><input type="radio" name="gender">Ж<br></label>
+
+        <label>
+            Любимый язык программирования: 
+            <select name="prog-lang" id="prog-lang">
+                <option value="">JavaScript</option>
+                <option value="">PHP</option>
+                <option value="">Python</option>
+                <option value="">Java</option>
+                <option value="">Pascal</option>
+                <option value="">С</option>
+                <option value="">С++</option>
+                <option value="">Haskel</option>
+                <option value="">Clojure</option>
+                <option value="">Prolog</option>
+                <option value="">Scala</option>
+            </select><br>
+        </label>
+
+        <label>
+            Биография:<br>
+            <textarea name="bio" id="bio"></textarea><br>
+        </label>
+        
+        <label><input type="checkbox">С контрактом ознакомлен(-а)</label><br>
+        <input type="submit" value="Сохранить">
+    </form>  
 
 
 
-  </body>
-
-</html> 
-
-
-
-
-
+</div>
+<footer>
+  <div class="foo-body"> 
+ (c) Виктория Переузник 2024
+  </div>
+</footer>
 
 
-
-
-
-
-
-
-
-
-
+</body></html>
